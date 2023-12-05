@@ -1,0 +1,38 @@
+﻿@inherits ComponentBase
+
+<div class="testimonial-card">
+    <div class="testimonial">
+        <h4>Name: @PatientName</h4>
+        <p>Rating: @Rating</p>
+        <p>Comment: @Comment</p>
+        
+    </div>
+    
+
+</div>
+
+@code {
+    [Parameter] public string PatientName { get; set; }
+    [Parameter] public int Rating { get; set; }
+    [Parameter] public string Comment { get; set; }
+    
+}
+
+<style>
+    .testimonials {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .testimonial-card {
+        border: 1px solid #ccc;
+        padding: 10px;
+        margin: 10px;
+        width: 300px;
+        background-color: #f9f9f9;
+    }
+</style
+
+@code {
+
+}
